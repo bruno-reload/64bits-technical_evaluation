@@ -1,0 +1,107 @@
+{
+    "name": "CustomInput",
+    "maps": [
+        {
+            "name": "player",
+            "id": "2d82b5b7-3dff-47d5-ac0a-e680d75e4ed0",
+            "actions": [
+                {
+                    "name": "punch",
+                    "type": "Button",
+                    "id": "90ee9074-19dd-4ecf-8a53-828c9131de2f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "getter",
+                    "type": "Button",
+                    "id": "60b2a8e1-e42e-41a3-b1ff-0f292a625e12",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "15524b04-1798-4573-89ab-612c2859b73a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "312d100c-12b7-4801-b74e-9de675c8c958",
+                    "path": "<HID::Microntek              USB Joystick          >/button2",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "punch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3158b19-cb14-48e6-b7b6-9cd30914e3d8",
+                    "path": "<HID::Microntek              USB Joystick          >/button3",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "getter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "a3b2ab6f-08d3-452c-8bea-ddf6398fbc5f",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "091a7e2b-9d6c-4dab-9ab9-f692615cc8d7",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "d7ec612f-b024-488f-b82f-7c615c4ea296",
+                    "path": "<Joystick>/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "a1a45f5f-c99f-4464-a4cb-c7032bc6d84f",
+                    "path": "<Joystick>/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
