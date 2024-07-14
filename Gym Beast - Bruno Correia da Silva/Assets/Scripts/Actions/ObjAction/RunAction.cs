@@ -18,13 +18,23 @@ public class RunAction : IAction
 
     public void Perform()
     {
+        MovePlayer();
+        MoveCamera();
+    }
+
+    private void MovePlayer()
+    {
         Vector2 direction = player.InputController.Context.ReadValue<Vector2>();
         Quaternion targetRotation = player.transform.rotation * Quaternion.Euler(0, direction.x * speedRotation, 0);
-        direction.y = direction.y == 0 && direction.x != 0? 1: direction.y;
+        direction.y = direction.y == 0 && direction.x != 0 ? 1 : direction.y;
         player.transform.rotation = Quaternion.Lerp(player.transform.rotation, targetRotation, Time.fixedDeltaTime * speed);
         player.transform.position += player.transform.forward * speed * Time.fixedDeltaTime * direction.y;
     }
 
+    private void MoveCamera()
+    {
+
+    }
     public void Prepare()
     {
         player.ToCollect.BalanceManager.ChangeParentSteadyBaseRun();

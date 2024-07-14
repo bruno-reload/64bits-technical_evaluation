@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private ActionFactory action;
     private ToCollect toCollect;
+    private CameraController camera;
 
+    public CameraController Camera { get => camera; }
     public InputController InputController { get => inputController; }
     public Animator Animator { get => animator; }
     public StateMachine Machine { get => machine; }
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         action = new ActionFactory(this);
         toCollect = GetComponent<ToCollect>();
+        camera = GetComponentInChildren<CameraController>();
     }
 
     public void TryPunch()
