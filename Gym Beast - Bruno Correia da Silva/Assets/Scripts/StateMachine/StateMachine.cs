@@ -1,16 +1,11 @@
 using UnityEngine;
 
-
+[System.Serializable]
 public class StateMachine : MonoBehaviour
 {
     private IState currentState;
 
-    public IState CurrentState { get => currentState; }
-    private void Awake()
-    {
-
-        currentState = new IdleState(GetComponent<PlayerController>());
-    }
+    public IState CurrentState { get => currentState; set => currentState = value; }
 
     void Update()
     {

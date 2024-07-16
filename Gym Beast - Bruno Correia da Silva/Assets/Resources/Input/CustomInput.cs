@@ -59,7 +59,7 @@ public partial class @CustomInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""312d100c-12b7-4801-b74e-9de675c8c958"",
-                    ""path"": ""<HID::Microntek              USB Joystick          >/button2"",
+                    ""path"": ""<HID::Microntek              USB Joystick          >/button4"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
